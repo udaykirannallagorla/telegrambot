@@ -1,0 +1,2 @@
+python-telegram-bot==20.7
+textblob==0.17.1
