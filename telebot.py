@@ -1,13 +1,14 @@
 from typing import Final
 from textblob import TextBlob
 from telegram import Update
+import os
 from telegram.ext import (
     ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 )
 
 # === Bot Configuration ===
-TOKEN: Final = '7264049682:AAF3I95o4OKoHopPI-tSYxvTstT3xAF7QSk'  # Replace with your token
-BOT_USERNAME: Final = '@may_chan_bot'
+TOKEN = os.getenv('TOKEN')  # Replace with your token
+BOT_USERNAME: Final = '@saru_chan_bot'
 
 
 # === Command Handlers ===
